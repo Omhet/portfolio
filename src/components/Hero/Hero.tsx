@@ -8,7 +8,7 @@ const Header = () => {
   const { titles, name, img } = hero;
 
   return (
-    <section id="hero" className="jumbotron">
+    <section id="hero">
       <ProfileImg alt="profile image" filename={img} />
       <h1 className="hero-title">
         <span className="text-color-main">{name}</span>
