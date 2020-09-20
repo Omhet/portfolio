@@ -9,19 +9,17 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  img: 'profile.jpg',
+  name: 'Vladimir Ivanov',
+  titles: ['UI', 'Frontend', 'Backend'],
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  text: `I’m a fullstack web engineer, currently based in Moscow.
+  Engaged in the development of data-intensive applications,
+  participating in the whole proccess of app creation: 
+  from UI design to server set-up and deployments`,
 };
 
 // PROJECTS DATA
@@ -29,36 +27,32 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    title: 'AIRADAVOMETRA',
+    info: 'Daria Artemova photo portfolio site',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/cobidev/react-simplefolio',
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    title: 'WannaWatch',
+    info: 'IMDB inspired watchlist app',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/cobidev/react-simplefolio',
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
+    title: 'Recycle',
+    info: 'HTML5 game built with Phaser',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/cobidev/react-simplefolio',
   },
 ];
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
-  btn: '',
+  cta: "Let's stay in touch",
   email: '',
 };
 
@@ -86,9 +80,4 @@ export const footerData = {
       url: '',
     },
   ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
 };
