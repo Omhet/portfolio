@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "vladimir-ivanov-portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Vladimir Ivanov portfolio using gatsby-simplefolio as a starter",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
