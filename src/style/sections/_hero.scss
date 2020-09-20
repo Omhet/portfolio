@@ -1,5 +1,4 @@
 #hero {
-  min-height: 100vh;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -9,12 +8,6 @@
   color: $dark-blue-text;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
   /* background: url("/src/assets/[your-image].png");
@@ -26,10 +19,6 @@
   }
 
   .hero-title {
-    font-size: 5.6rem;
-    font-weight: 700;
-    margin-bottom: 3.2rem;
-    text-align: left;
 
     @include respond(tab-land) {
       font-size: 4rem;

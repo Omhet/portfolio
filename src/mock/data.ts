@@ -56,8 +56,8 @@ export const contactData = {
   email: '',
 };
 
-// FOOTER DATA
-export const footerData = {
+// SOCIAL DATA
+export const socialData = {
   networks: [
     {
       id: nanoid(),

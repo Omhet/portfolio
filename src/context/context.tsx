@@ -1,5 +1,5 @@
 import React from 'react';
-import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
+import { heroData, aboutData, projectsData, contactData, socialData } from '../mock/data';
 
 
 const PortfolioContext = React.createContext({
@@ -7,7 +7,7 @@ const PortfolioContext = React.createContext({
   about: aboutData,
   projects: projectsData,
   contact: contactData,
-  footer: footerData,
+  social: socialData,
 });
 
 export const PortfolioProvider = PortfolioContext.Provider;

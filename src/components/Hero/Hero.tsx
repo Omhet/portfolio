@@ -16,13 +16,9 @@ const Header = () => {
           <span key={title}>{title}</span>
         ))}
       </h1>
-      <p className="hero-cta">
-        <span className="cta-btn cta-btn--hero">
-          <Link to="about" smooth duration={1000}>
-            See my work
-          </Link>
-        </span>
-      </p>
+      <Link to="about" smooth duration={1000}>
+        See my work
+      </Link>
     </section>
   );
 };
