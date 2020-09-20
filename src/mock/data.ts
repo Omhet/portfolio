@@ -9,7 +9,7 @@ export const headData = {
 
 // HERO DATA
 export const heroData = {
-  img: 'profile.jpg',
+  img: 'profile.png',
   name: 'Vladimir Ivanov',
   titles: ['UI', 'Frontend', 'Backend'],
 };
