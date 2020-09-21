@@ -14,12 +14,60 @@ export const heroData = {
   titles: ['UI', 'Frontend', 'Backend'],
 };
 
+const Skills = {
+  Figma: {
+    name: 'Figma',
+    img: 'skills/figma.png',
+  },
+  XD: {
+    name: 'Adobe XD',
+    img: 'skills/xd.png',
+  },
+  HTML: {
+    name: 'HTML',
+    img: 'skills/html.png',
+  },
+  CSS: {
+    name: 'CSS',
+    img: 'skills/css.png',
+  },
+  JS: {
+    name: 'JS',
+    img: 'skills/js.png',
+  },
+  TS: {
+    name: 'TS',
+    img: 'skills/ts.png',
+  },
+  React: {
+    name: 'React',
+    img: 'skills/react.png',
+  },
+  Redux: {
+    name: 'Redux',
+    img: 'skills/redux.png',
+  },
+  NodeJS: {
+    name: 'NodeJS',
+    img: 'skills/node.png',
+  },
+  GraphQL: {
+    name: 'GraphQL',
+    img: 'skills/graphql.png',
+  },
+};
+
 // ABOUT DATA
 export const aboutData = {
-  firstParagraph: "I’m a fullstack web engineer, currently based in Moscow.",
+  firstParagraph: 'I’m a fullstack web engineer, currently based in Moscow.',
   secondParagraph: `Engaged in the development of data-intensive applications,
   participating in the whole proccess of app creation: 
-  from UI design to server set-up and deployments`
+  from UI design to server set-up and deployments`,
+  skills: [
+    [Skills.Figma, Skills.XD],
+    [Skills.HTML, Skills.CSS, Skills.JS, Skills.TS, Skills.React, Skills.Redux],
+    [Skills.NodeJS, Skills.GraphQL],
+  ],
 };
 
 // PROJECTS DATA
