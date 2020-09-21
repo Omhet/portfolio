@@ -16,10 +16,10 @@ export const heroData = {
 
 // ABOUT DATA
 export const aboutData = {
-  text: `I’m a fullstack web engineer, currently based in Moscow.
-  Engaged in the development of data-intensive applications,
+  firstParagraph: "I’m a fullstack web engineer, currently based in Moscow.",
+  secondParagraph: `Engaged in the development of data-intensive applications,
   participating in the whole proccess of app creation: 
-  from UI design to server set-up and deployments`,
+  from UI design to server set-up and deployments`
 };
 
 // PROJECTS DATA

@@ -4,13 +4,14 @@ import Title from '../Title/Title';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { text } = about;
+  const { firstParagraph, secondParagraph } = about;
 
   return (
     <section id="about">
-      <Title title="About Me" />
-      <div className="about-wrapper__info">
-        <p className="about-wrapper__info-text">{text}</p>
+      <div className="about-info">
+        <Title title="About" />
+        <p>{firstParagraph}</p>
+        <p>{secondParagraph}</p>
       </div>
     </section>
   );
