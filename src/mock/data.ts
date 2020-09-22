@@ -74,27 +74,27 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'projects/daria-site.jpg',
     title: 'AIRADAVOMETRA',
     info: 'Daria Artemova photo portfolio site',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio',
+    url: 'https://airadavometra.space/',
+    repo: 'https://github.com/Omhet/',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'projects/watchlist.jpg',
     title: 'WannaWatch',
     info: 'IMDB inspired watchlist app',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio',
+    url: 'https://wannawatch.now.sh/',
+    repo: 'https://github.com/Omhet/',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
+    img: 'projects/recycle.jpg',
     title: 'Recycle',
     info: 'HTML5 game built with Phaser',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio',
+    url: 'https://omhet.github.io/recycle-game/',
+    repo: 'https://github.com/Omhet/',
   },
 ];
 

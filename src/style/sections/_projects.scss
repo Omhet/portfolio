@@ -1,3 +1,18 @@
 #projects {
   margin-top: 80px;
+
+  .project-wrapper {
+
+    & .project-wrapper__image + .project-wrapper__image {
+      margin-top: 24px;
+    }
+  }
+
+  .project-wrapper__image {
+    filter: saturate(0);
+    transition: filter .3s;
+    &:hover {
+      filter: saturate(1);
+    }
+  }
 }
