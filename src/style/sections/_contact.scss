@@ -1,3 +1,26 @@
 #contact {
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .contact-wrapper__text {
+    font-size: 80px;
+    font-weight: 300;
+  }
+
+  .contact-wrapper__form {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 416px;
+
+    & > * + * {
+        margin-top: 32px;
+    }
+
+    & :last-child {
+        margin-top: 40px;
+    }
+  }
 }
