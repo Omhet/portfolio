@@ -47,6 +47,7 @@ const Header = () => {
           See my work
         </Link>
       </div>
+      <div className="hero-bottom-line"></div>
       <ProfileImg className="hero-img" alt="profile image" filename={img} />
       <div className="hero-watermark">{name}</div>
     </section>

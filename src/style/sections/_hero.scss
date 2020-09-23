@@ -7,7 +7,7 @@
 
   .hero-img {
     position: absolute !important;
-    bottom: 0;
+    bottom: 4px;
     left: 50%;
     transform: translate(-50%);
   }
@@ -59,6 +59,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    margin-top: auto;
     margin-bottom: 64px;
   }
 
@@ -102,5 +103,10 @@
     &:hover {
       padding-bottom: 12px;
     }
+  }
+
+  .hero-bottom-line {
+    height: 4px;
+    background: linear-gradient(to right, rgba($color: $accentColor, $alpha: 0.0), $accentColor);
   }
 }
