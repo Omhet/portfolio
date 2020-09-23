@@ -28,7 +28,7 @@ const SkillImg = ({ filename, alt, className }) => (
       if (!image) return null;
 
       const imageFixed = image.node.childImageSharp.fixed;
-      return <Img className={className} alt={alt} fixed={imageFixed} />;
+      return <Img imgStyle={{ objectFit: 'contain' }} style={{ height: '55px'}} className={className} alt={alt} fixed={imageFixed} />;
     }}
   />
 );
