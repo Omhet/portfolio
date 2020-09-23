@@ -68,6 +68,28 @@ export const aboutData = {
     [Skills.HTML, Skills.CSS, Skills.JS, Skills.TS, Skills.React, Skills.Redux],
     [Skills.NodeJS, Skills.GraphQL],
   ],
+  timeline: [
+    {
+      description: 'Enrolled in RSUH, Moscow',
+      year: '2016'
+    },
+    {
+      description: 'Started to learn web development',
+      year: '2017'
+    },
+    {
+      description: 'Internship in Align, frontend department',
+      year: '2018'
+    },
+    {
+      description: 'Became a full-time software engineer in Align',
+      year: '2019'
+    },
+    {
+      description: 'Got my bachelor in Computer Sciense',
+      year: '2020'
+    },
+  ]
 };
 
 // PROJECTS DATA
