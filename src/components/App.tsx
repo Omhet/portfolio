@@ -9,6 +9,7 @@ import Contact from './Contact/Contact';
 import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, contactData, socialData } from '../mock/data';
+import Social from './Social';
 
 function App() {
   const [hero, setHero] = useState(heroData);
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, social }}>
+      <Social />
       <Hero />
       <About />
       <Projects />

@@ -72,25 +72,25 @@ export const aboutData = {
   timeline: [
     {
       description: 'Enrolled in RSUH, Moscow',
-      year: '2016'
+      year: '2016',
     },
     {
       description: 'Started to learn web development',
-      year: '2017'
+      year: '2017',
     },
     {
       description: 'Internship in Align, frontend department',
-      year: '2018'
+      year: '2018',
     },
     {
       description: 'Became a full-time software engineer in Align',
-      year: '2019'
+      year: '2019',
     },
     {
       description: 'Got my bachelor in Computer Sciense',
-      year: '2020'
+      year: '2020',
     },
-  ]
+  ],
 };
 
 // PROJECTS DATA
@@ -132,23 +132,18 @@ export const socialData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/vlivanoff/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/Omhet',
+    },
+    {
+      id: nanoid(),
+      name: 'twitter',
+      url: 'https://twitter.com/omhetehmo',
     },
   ],
 };
