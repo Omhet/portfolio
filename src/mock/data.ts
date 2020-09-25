@@ -11,6 +11,7 @@ export const headData = {
 export const heroData = {
   img: 'profile.png',
   name: 'Vladimir Ivanov',
+  ctaText: 'See my work',
   titles: ['UI', 'Frontend', 'Backend'],
 };
 

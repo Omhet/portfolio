@@ -96,12 +96,20 @@
   }
 
   .hero-cta {
-    border-right: 1px solid $tertiaryBackColor;
-    padding-right: 24px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
 
-    &:hover {
-      padding-bottom: 12px;
+    &:hover > .hero-cta__text {
+      padding-bottom: 24px;
+    }
+
+    &__text {
+      transition: all .3s ease-in-out;
+    }
+
+    & > :last-child {
+      margin-left: 24px;
     }
   }
 

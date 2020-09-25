@@ -1,12 +1,13 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-import ProfileImg from '../Image/ProfileImg';
+import ArrowIcon from '../../images/icons/arrow.svg';
 import LogoImg from '../Image/LogoImg';
+import ProfileImg from '../Image/ProfileImg';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { titles, name, img } = hero;
+  const { titles, name, img, ctaText } = hero;
 
   return (
     <section id="hero">
@@ -44,7 +45,8 @@ const Header = () => {
           </ul>
         </div>
         <Link className="hero-cta" to="projects" smooth duration={1000}>
-          See my work
+          <span className="hero-cta__text">{ctaText}</span>
+          <ArrowIcon />
         </Link>
       </div>
       <div className="hero-bottom-line"></div>
