@@ -5,8 +5,14 @@
     display: block;
   }
 
-  & > .project-wrapper + .project-wrapper {
-    margin-top: 24px;
+  .project-wrapper:nth-child(2n) {
+    border-top: 4px solid $accentColor;
+    border-bottom: 4px solid $accentColor;
+    border-left: 4px solid $accentColor;
+  }
+
+  .project-wrapper:nth-child(3n) {
+    border-right: 4px solid $accentColor;
   }
 
   .project {
