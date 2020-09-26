@@ -1,21 +1,6 @@
 import React, { useContext } from 'react';
 import PortfolioContext from '../context/context';
-import LinkedinIcon from '../images/icons/social/linkedin.svg';
-import GithubIcon from '../images/icons/social/github.svg';
-import TwitterIcon from '../images/icons/social/twitter.svg';
-
-const getIcon = (name: string) => {
-  switch (name) {
-    case 'linkedin':
-      return LinkedinIcon;
-    case 'github':
-      return GithubIcon;
-    case 'twitter':
-      return TwitterIcon;
-    default:
-      return LinkedinIcon;
-  }
-};
+import { getIcon } from '../utils';
 
 const Social = () => {
   const { social } = useContext(PortfolioContext);

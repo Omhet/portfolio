@@ -98,10 +98,9 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'projects/daria-site.jpg',
-    title: 'AIRADAVOMETRA',
+    title: 'Airadavometra Photos',
     info: 'Daria Artemova photo portfolio site',
     url: 'https://airadavometra.space/',
-    repo: 'https://github.com/Omhet/',
   },
   {
     id: nanoid(),
@@ -109,15 +108,15 @@ export const projectsData = [
     title: 'WannaWatch',
     info: 'IMDB inspired watchlist app',
     url: 'https://wannawatch.now.sh/',
-    repo: 'https://github.com/Omhet/',
+    repo: 'https://github.com/Omhet/watchlist',
   },
   {
     id: nanoid(),
     img: 'projects/recycle.jpg',
-    title: 'Recycle',
+    title: "Recycle: Don't get wasted",
     info: 'HTML5 game built with Phaser',
     url: 'https://omhet.github.io/recycle-game/',
-    repo: 'https://github.com/Omhet/',
+    repo: 'https://github.com/Omhet/recycle-game',
   },
 ];
 
