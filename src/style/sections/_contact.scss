@@ -16,11 +16,23 @@
     max-width: 416px;
 
     & > * + * {
-        margin-top: 32px;
+      margin-top: 32px;
     }
 
-    & :last-child {
-        margin-top: 40px;
+    & > :last-child {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
     }
+
+    // & textarea {
+    //   &::after {
+    //     content: " ";
+    //     display: block;
+    //     height: 1px;
+    //     width: 100%;
+    //     background-color: aqua;
+    //   }
+    // }
   }
 }
