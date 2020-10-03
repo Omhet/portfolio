@@ -1,10 +1,13 @@
 import React, { useCallback, useContext, useState } from 'react';
 import PortfolioContext from '../../context/context';
 import Loader from '../Loader';
+import HeartIcon from '../../images/icons/heart.svg';
+import Blob from '../../images/icons/blob-1.svg';
 
 const Contact = () => {
-  const { contact } = useContext(PortfolioContext);
-  const { text, cta } = contact;
+  const { contact, hero } = useContext(PortfolioContext);
+  const { textFirstLine, textSecondLine, cta } = contact;
+  const { name: authorName } = hero;
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -27,8 +30,8 @@ const Contact = () => {
 
   return (
     <section id="contact">
+      <div className="contacts-left-line"></div>
       <div className="contact-wrapper">
-        <p className="contact-wrapper__text">{text}</p>
         <form onSubmit={handleSubmit} className="contact-wrapper__form" action="">
           <input
             onChange={({ target: { value } }) => setName(value)}
@@ -54,6 +57,21 @@ const Contact = () => {
             {isLoading ? <Loader /> : cta}
           </button>
         </form>
+        <div className="contact-wrapper__text-container">
+          <p className="contact-wrapper__text">
+            {textFirstLine}
+            <br />
+            {textSecondLine}
+          </p>
+          <Blob className="blob" />
+        </div>
+      </div>
+
+      <div className="footer">
+        <div className="made-by">
+          <span>Made by {authorName} with Gatsby and</span>
+          <HeartIcon />
+        </div>
       </div>
     </section>
   );

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Hero from './Hero/Hero';
 import About from './About/About';
@@ -28,12 +27,13 @@ function App() {
 
   return (
     <PortfolioProvider value={{ hero, about, projects, contact, social }}>
-      <Social />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-      {/* <Footer /> */}
+      <div className="root">
+        <Social />
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
     </PortfolioProvider>
   );
 }

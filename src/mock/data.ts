@@ -122,7 +122,8 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  text: "Let's stay in touch",
+  textFirstLine: "Let's stay in",
+  textSecondLine: "touch",
   cta: 'Submit',
   email: '',
 };
