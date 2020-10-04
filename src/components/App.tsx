@@ -3,12 +3,12 @@ import Hero from './Hero/Hero';
 import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
-// import Footer from './Footer/Footer';
 
 import { PortfolioProvider } from '../context/context';
 
 import { heroData, aboutData, projectsData, contactData, socialData } from '../mock/data';
 import Social from './Social';
+import Footer from './Footer';
 
 function App() {
   const [hero, setHero] = useState(heroData);
@@ -33,6 +33,7 @@ function App() {
         <About />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     </PortfolioProvider>
   );

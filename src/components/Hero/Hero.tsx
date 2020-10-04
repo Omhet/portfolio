@@ -4,6 +4,7 @@ import PortfolioContext from '../../context/context';
 import ArrowIcon from '../../images/icons/arrow.svg';
 import LogoImg from '../Image/LogoImg';
 import ProfileImg from '../Image/ProfileImg';
+import LinkWithArrow from '../LinkWithArrow';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
@@ -44,10 +45,7 @@ const Header = () => {
             ))}
           </ul>
         </div>
-        <Link className="hero-cta" to="projects" smooth duration={1000}>
-          <span className="hero-cta__text">{ctaText}</span>
-          <ArrowIcon />
-        </Link>
+        <LinkWithArrow to="projects" text="See my work" />
       </div>
       <div className="hero-bottom-line"></div>
       <ProfileImg className="hero-img" alt="profile image" filename={img} />

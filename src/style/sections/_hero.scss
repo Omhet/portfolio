@@ -95,24 +95,6 @@
     font-size: 36px;
   }
 
-  .hero-cta {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-    &:hover > .hero-cta__text {
-      padding-bottom: 24px;
-    }
-
-    &__text {
-      transition: all .3s ease-in-out;
-    }
-
-    & > :last-child {
-      margin-left: 24px;
-    }
-  }
-
   .hero-bottom-line {
     height: 4px;
     background: linear-gradient(to right, rgba($color: $accentColor, $alpha: 0.0), $accentColor);

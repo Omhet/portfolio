@@ -1,0 +1,35 @@
+footer {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 108px 12px 108px;
+  border: 4px solid $accentColor;
+  border-top: none;
+}
+
+.made-by {
+  color: $secondaryTextColor;
+
+  & > :last-child {
+    margin-left: 8px;
+  }
+
+  & a {
+    margin: 0 6px;
+    color: $secondaryTextColor;
+    font-size: 16px;
+    font-weight: 300;
+    transition: none;
+    cursor: pointer;
+    &:hover {
+      color: $primaryTextColor;
+    }
+  }
+}
+
+.go-back {
+  & svg {
+    transform: rotate(180deg);
+  }
+}

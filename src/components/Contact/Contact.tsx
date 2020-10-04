@@ -1,13 +1,12 @@
 import React, { useCallback, useContext, useState } from 'react';
 import PortfolioContext from '../../context/context';
+import Blob from '../../images/icons/blob-2.svg';
+import ArrowHorizIcon from '../../images/icons/arrow-h.svg';
 import Loader from '../Loader';
-import HeartIcon from '../../images/icons/heart.svg';
-import Blob from '../../images/icons/blob-1.svg';
 
 const Contact = () => {
-  const { contact, hero } = useContext(PortfolioContext);
+  const { contact } = useContext(PortfolioContext);
   const { textFirstLine, textSecondLine, cta } = contact;
-  const { name: authorName } = hero;
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -47,30 +46,25 @@ const Contact = () => {
             type="email"
             required
           />
-          <textarea
-            onChange={({ target: { value } }) => setMessage(value)}
-            value={message}
-            placeholder="What you want to say"
-            required
-          ></textarea>
-          <button type="submit" className="cta-button">
+          <div className="textarea-wrapper">
+            <textarea
+              onChange={({ target: { value } }) => setMessage(value)}
+              value={message}
+              placeholder="What you want to say"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" className="cta-button submit-button">
             {isLoading ? <Loader /> : cta}
           </button>
         </form>
         <div className="contact-wrapper__text-container">
           <p className="contact-wrapper__text">
-            {textFirstLine}
-            <br />
-            {textSecondLine}
+            <span>{textFirstLine}</span>
+            <span>{textSecondLine}</span>
+            <ArrowHorizIcon className="arrow-h" />
           </p>
           <Blob className="blob" />
-        </div>
-      </div>
-
-      <div className="footer">
-        <div className="made-by">
-          <span>Made by {authorName} with Gatsby and</span>
-          <HeartIcon />
         </div>
       </div>
     </section>

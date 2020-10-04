@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   border-right: 4px solid $accentColor;
-  border-bottom: 4px solid $accentColor;
 
   .contact-wrapper {
     display: flex;
@@ -24,9 +23,16 @@
   }
 
   .contact-wrapper__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1;
     font-size: 80px;
     font-weight: 300;
-    text-align: right;
+
+    & > * + * {
+      margin-top: 40px;
+    }
   }
 
   .contact-wrapper__form {
@@ -39,10 +45,34 @@
       margin-top: 32px;
     }
 
-    & > :last-child {
+    .submit-button {
       display: flex;
+      align-items: center;
       justify-content: center;
       margin-top: 56px;
+      max-height: 82px;
+    }
+
+    textarea {
+      width: 100%;
+      &::-webkit-resizer {
+        display: none;
+      }
+    }
+
+    .textarea-wrapper {
+      position: relative;
+      &::after {
+        content: ' ';
+        position: absolute;
+        bottom: 14px;
+        right: 4px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 8px 8px;
+        border-color: transparent transparent $secondaryTextColor transparent;
+      }
     }
   }
 
@@ -53,18 +83,5 @@
     width: 4px;
     height: 68vh;
     background: linear-gradient(to bottom, rgba($color: $accentColor, $alpha: 0), $accentColor);
-  }
-
-  .footer {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .made-by {
-    color: $secondaryTextColor;
-
-    & > :last-child {
-      margin-left: 8px;
-    }
   }
 }

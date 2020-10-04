@@ -1,0 +1,17 @@
+.link-with-arrow {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover > .link-with-arrow__text {
+    padding-bottom: 24px;
+  }
+
+  &__text {
+    transition: all .3s ease-in-out;
+  }
+
+  & > :last-child {
+    margin-left: 24px;
+  }
+}
