@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, useState } from 'react';
 import PortfolioContext from '../../context/context';
-import Blob from '../../images/icons/blob-2.svg';
+import Blob from '../../images/icons/blob-3.svg';
 import ArrowHorizIcon from '../../images/icons/arrow-h.svg';
 import Loader from '../Loader';
 
