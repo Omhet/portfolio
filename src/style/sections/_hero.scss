@@ -9,18 +9,20 @@
     position: absolute !important;
     bottom: 4px;
     left: 50%;
+    width: clamp(460px, 75vw, 720px);
     transform: translate(-50%);
+    z-index: -1;
   }
 
   .hero-watermark {
     position: absolute !important;
     opacity: 0.01;
     font-weight: 600;
-    font-size: 214px;
+    font-size: clamp(100px, 25vw, 214px);
     text-transform: uppercase;
     z-index: -1;
     white-space: nowrap;
-    transform: translate(calc((105vw - 100%) / 2));
+    transform: translate(calc((90vw - 100%) / 2));
   }
 
   .hero-top {
@@ -41,7 +43,7 @@
     padding-right: 24px;
 
     & a {
-      font-size: 16px;
+      font-size: clamp(12px, 3vw, 16px);
       font-weight: 300;
       transition: none;
       cursor: pointer;
@@ -60,7 +62,7 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-top: auto;
-    margin-bottom: 64px;
+    margin-bottom: clamp(24px, 2vw, 64px);
   }
 
   .hero-info {
@@ -74,17 +76,16 @@
     display: flex;
     margin-top: 16px;
     font-weight: 300;
-    font-size: $default-font-size;
+    font-size: clamp(18px, 3vw, 24px);
 
     & > li + li {
       &::before {
         content: ' ';
         display: inline-block;
         vertical-align: middle;
-        width: 8px;
-        height: 8px;
-        margin-right: 16px;
-        margin-left: 16px;
+        width: clamp(4px, 1vw, 8px);
+        height: clamp(4px, 1vw, 8px);
+        margin: 0 clamp(8px, 2vw, 16px);
         background-color: $tertiaryBackColor;
         border-radius: 50%;
       }
@@ -92,7 +93,13 @@
   }
 
   .hero-name {
-    font-size: 36px;
+    font-size: clamp(24px, 5vw, 36px);
+  }
+
+  .see-work {
+    @include respond(tab-port) {
+      display: none;
+    }
   }
 
   .hero-bottom-line {

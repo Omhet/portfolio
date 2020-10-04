@@ -54,5 +54,6 @@ textarea {
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 44px;
+  padding: 0 clamp(16px, 3vw, 44px);
+  overflow-x: hidden;
 }

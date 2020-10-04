@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-import ArrowIcon from '../../images/icons/arrow.svg';
 import LogoImg from '../Image/LogoImg';
 import ProfileImg from '../Image/ProfileImg';
 import LinkWithArrow from '../LinkWithArrow';
@@ -45,7 +44,7 @@ const Header = () => {
             ))}
           </ul>
         </div>
-        <LinkWithArrow to="projects" text="See my work" />
+        <LinkWithArrow className="see-work" to="projects" text="See my work" />
       </div>
       <div className="hero-bottom-line"></div>
       <ProfileImg className="hero-img" alt="profile image" filename={img} />

@@ -13,8 +13,8 @@ const ProfileImg = ({ filename, alt, className }) => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 720) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 720) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -27,8 +27,8 @@ const ProfileImg = ({ filename, alt, className }) => (
 
       if (!image) return null;
 
-      const imageFixed = image.node.childImageSharp.fixed;
-      return <Img className={className} alt={alt} fixed={imageFixed} />;
+      const imageFixed = image.node.childImageSharp.fluid;
+      return <Img className={className} alt={alt} fluid={imageFixed} />;
     }}
   />
 );
