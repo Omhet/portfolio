@@ -9,7 +9,7 @@
     position: absolute !important;
     bottom: 4px;
     left: 50%;
-    width: clamp(460px, 75vw, 720px);
+    width: clamp(540px, 75vw, 720px);
     transform: translate(-50%);
     z-index: -1;
   }
@@ -18,7 +18,7 @@
     position: absolute !important;
     opacity: 0.01;
     font-weight: 600;
-    font-size: clamp(100px, 25vw, 214px);
+    font-size: clamp(100px, 15vw, 214px);
     text-transform: uppercase;
     z-index: -1;
     white-space: nowrap;
@@ -28,19 +28,19 @@
   .hero-top {
     display: flex;
     justify-content: space-between;
-    margin-top: 24px;
+    margin-top: clamp(16px, 3vw, 24px);;
   }
 
   .hero-logo {
     border-left: 1px solid $tertiaryBackColor;
-    padding-left: 24px;
+    padding-left: clamp(16px, 3vw, 24px);
   }
 
   .hero-nav {
     display: flex;
     text-transform: uppercase;
     border-right: 1px solid $tertiaryBackColor;
-    padding-right: 24px;
+    padding-right: clamp(16px, 3vw, 24px);
 
     & a {
       font-size: clamp(12px, 3vw, 16px);
@@ -53,7 +53,7 @@
     }
 
     & > li + li {
-      margin-left: 24px;
+      margin-left: clamp(16px, 3vw, 24px);
     }
   }
 
@@ -69,7 +69,7 @@
     display: flex;
     flex-direction: column;
     border-left: 1px solid $tertiaryBackColor;
-    padding-left: 24px;
+    padding-left: clamp(16px, 3vw, 24px);
   }
 
   .hero-titles-list {

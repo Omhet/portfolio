@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop -p 4000",
+    "dev": "gatsby develop -H 0.0.0.0 -p 4000",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "yarn dev",
     "serve": "gatsby serve",
