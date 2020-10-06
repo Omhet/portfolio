@@ -6,6 +6,11 @@
   flex-direction: column;
   z-index: 1;
 
+  @include respond(phone) {
+    top: auto;
+    bottom: 20px;
+  }
+
   svg {
     fill: #f8f8f8;
     fill-opacity: 0.8;
