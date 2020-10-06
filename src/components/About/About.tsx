@@ -5,7 +5,7 @@ import Title from '../Title/Title';
 
 const SkillItem = ({ img, name }: { img: string; name: string }) => (
   <div className="about-skills__item">
-    <SkillImg alt={name} filename={img} />
+    <SkillImg className="about-skills__item-img" alt={name} filename={img} />
     <span className="about-skills__item-text">{name}</span>
   </div>
 );

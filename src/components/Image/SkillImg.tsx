@@ -13,8 +13,8 @@ const SkillImg = ({ filename, alt, className }) => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 64) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 64) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -24,11 +24,18 @@ const SkillImg = ({ filename, alt, className }) => (
     `}
     render={(data) => {
       const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
-      
+
       if (!image) return null;
 
-      const imageFixed = image.node.childImageSharp.fixed;
-      return <Img imgStyle={{ objectFit: 'contain' }} style={{ height: '55px'}} className={className} alt={alt} fixed={imageFixed} />;
+      const imageFluid = image.node.childImageSharp.fluid;
+      return (
+        <Img
+          imgStyle={{ objectFit: 'contain' }}
+          className={className}
+          alt={alt}
+          fluid={imageFluid}
+        />
+      );
     }}
   />
 );
@@ -36,7 +43,7 @@ const SkillImg = ({ filename, alt, className }) => (
 SkillImg.propTypes = {
   filename: PropTypes.string,
   alt: PropTypes.string,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 export default SkillImg;

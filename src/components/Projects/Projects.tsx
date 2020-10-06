@@ -11,8 +11,8 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <Title title="Projects" />
-      {projects.map((project, index) => {
+      <Title className="projects-title" title="Projects" />
+      {projects.map((project) => {
         const { title, info, url, repo, img, id } = project;
 
         return (

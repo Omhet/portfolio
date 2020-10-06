@@ -7,7 +7,7 @@ h1 {
 p,
 a {
   font-family: 'Montserrat', sans-serif;
-  font-size: $default-font-size;
+  font-size: clamp(18px, 3vw, 24px);
 }
 
 p {
@@ -27,8 +27,8 @@ a:hover {
 }
 
 .section-title {
-  margin-bottom: 48px;
-  font-size: 32px;
+  padding-bottom: clamp(32px, 5vw, 48px);
+  font-size: clamp(24px, 5vw, 32px);
 }
 
 .text-color-main {

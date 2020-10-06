@@ -27,8 +27,8 @@ const ProfileImg = ({ filename, alt, className }) => (
 
       if (!image) return null;
 
-      const imageFixed = image.node.childImageSharp.fluid;
-      return <Img className={className} alt={alt} fluid={imageFixed} />;
+      const imageFluid = image.node.childImageSharp.fluid;
+      return <Img className={className} alt={alt} fluid={imageFluid} />;
     }}
   />
 );

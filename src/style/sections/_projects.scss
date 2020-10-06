@@ -1,6 +1,16 @@
 #projects {
   margin-top: 80px;
 
+  @include respond(tab-port) {
+    margin-top: 0;
+  }
+
+  .projects-title {
+    @include respond(tab-port) {
+      border-right: 4px solid $accentColor;
+    }
+  }
+
   .project-wrapper {
     display: block;
   }

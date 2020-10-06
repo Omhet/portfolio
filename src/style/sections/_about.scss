@@ -7,10 +7,18 @@
 }
 
 #about {
+  @include respond(tab-port) {
+    border-right: 4px solid $accentColor;
+  }
+  
   display: flex;
   position: relative;
 
   .about-timeline {
+    @include respond(tab-port) {
+      display: none;
+    }
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,26 +64,30 @@
   }
 
   .about-info {
-    margin-top: 80px;
+    margin-top: clamp(40px, 5vw, 80px);
     max-width: 720px;
+    width: 48vw;
+    @include respond(tab-port) {
+      width: 90vw;
+    }
   }
 
   .about-skills {
-    margin-top: 80px;
+    margin-top: clamp(40px, 5vw, 80px);
 
     &__items {
       display: flex;
       flex-direction: column;
 
       & > * + * {
-        margin-top: 40px;
+        margin-top: clamp(24px, 5vw, 40px);
       }
 
       &-row {
         display: flex;
 
         & > * + * {
-          margin-left: 24px;
+          margin-left: clamp(16px, 5vw, 40px);
         }
       }
     }
@@ -86,8 +98,13 @@
       align-items: center;
 
       &-text {
-        font-size: 18px;
+        font-size: clamp(14px, 3vw, 18px);
         margin-top: 8px;
+      }
+
+      &-img {
+        width: clamp(32px, 5vw, 64px);
+        height: clamp(32px, 5vw, 55px);
       }
     }
   }
