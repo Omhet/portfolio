@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  @include respond(phone) {
+    line-height: 1.2;
+  }
 
   &:hover > .link-with-arrow__text {
     padding-bottom: 24px;

@@ -7,9 +7,10 @@
 
   .contact-wrapper {
     display: flex;
+    flex-wrap: wrap-reverse;
     margin: auto;
     justify-content: space-between;
-    padding: 0 108px;
+    padding: 0 clamp(0px, 5vw, 108px);
     width: 100%;
   }
 
@@ -27,7 +28,7 @@
     flex-direction: column;
     align-items: flex-end;
     line-height: 1;
-    font-size: 80px;
+    font-size: clamp(40px, 5vw, 80px);
     font-weight: 300;
 
     & > * + * {
@@ -40,6 +41,11 @@
     flex-direction: column;
     justify-content: center;
     min-width: 416px;
+
+    @include respond(phone) {
+      min-width: 100%;
+      
+    }
 
     & > * + * {
       margin-top: 32px;

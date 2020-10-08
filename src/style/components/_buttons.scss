@@ -1,5 +1,5 @@
 .cta-button {
-  font-size: 32px;
+  font-size: clamp(24px, 3vw, 32px);
   font-weight: 300;
   background-color: transparent;
   color: $primaryTextColor;
