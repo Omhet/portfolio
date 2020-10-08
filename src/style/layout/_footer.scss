@@ -13,7 +13,6 @@ footer {
   font-size: clamp(8px, 3vw, 16px);
   color: $secondaryTextColor;
   text-align: right;
-  padding-bottom: 8px;
 
   & > :last-child {
     margin-left: clamp(6px, 1vw, 8px);
@@ -33,6 +32,7 @@ footer {
 }
 
 .go-back {
+  align-items: flex-end;
   & svg {
     transform: rotate(180deg);
   }

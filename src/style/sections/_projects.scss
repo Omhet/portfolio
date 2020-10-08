@@ -1,5 +1,6 @@
 #projects {
   margin-top: 80px;
+  min-height: auto;
 
   @include respond(tab-port) {
     margin-top: 0;

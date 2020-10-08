@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  
   @include respond(phone) {
     line-height: 1.2;
   }
@@ -15,6 +16,6 @@
   }
 
   & > :last-child {
-    margin-left: 24px;
+    margin-left: clamp(12px, 3vw, 24px);
   }
 }

@@ -1,7 +1,7 @@
 .social {
   position: fixed;
   top: 248px;
-  right: clamp(5px, 1vw, 10px);
+  right: 14px;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -9,7 +9,6 @@
   @include respond(phone) {
     top: auto;
     bottom: 56px;
-    right: 14px;
   }
 
   svg {
