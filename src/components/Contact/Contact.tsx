@@ -3,7 +3,6 @@ import PortfolioContext from '../../context/context';
 import Blob from '../../images/icons/blob-3.svg';
 import ArrowHorizIcon from '../../images/icons/arrow-h.svg';
 import Loader from '../Loader';
-import classnames from 'classnames';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
@@ -70,7 +69,9 @@ const Contact = () => {
           <button type="submit" className="cta-button submit-button">
             {isLoading ? <Loader /> : cta}
           </button>
-          <div className={classnames('success-msg', { show: shouldShowSuccessMessage })} >Successfully submitted. Thanks! 👋</div>
+          <div className={`success-msg ${shouldShowSuccessMessage ? 'show' : ''}`}>
+            Successfully submitted. Thanks! 👋
+          </div>
         </form>
         <div className="contact-wrapper__text-container">
           <p className="contact-wrapper__text">

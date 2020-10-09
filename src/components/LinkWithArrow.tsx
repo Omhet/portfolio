@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import classnames from 'classnames';
 import { Link } from 'react-scroll';
 import ArrowIcon from '../images/icons/arrow.svg';
 
@@ -16,7 +15,7 @@ const LinkWithArrow: FunctionComponent<Props> = ({
   className,
   isArrowOnTheLeft = false,
 }) => (
-  <Link className={classnames('link-with-arrow', className)} to={to} smooth duration={1000}>
+  <Link className={`link-with-arrow ${className}`} to={to} smooth duration={1000}>
     {isArrowOnTheLeft && <ArrowIcon />}
     <span className="link-with-arrow__text">{text}</span>
     {!isArrowOnTheLeft && <ArrowIcon />}
