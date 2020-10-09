@@ -7,11 +7,11 @@ const Social = () => {
 
   return (
     <div className="social">
-      {social.networks.map(({ id, url, name }) => {
+      {social.networks.map(({ url, name }) => {
         const Icon = getIcon(name);
         return (
           <a
-            key={id}
+            key={url}
             href={url}
             target="_blank"
             aria-label={`Social icon: ${name}`}

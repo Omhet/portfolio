@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import PortfolioContext from '../../context/context';
 import { getIcon } from '../../utils';
 import ProjectImg from '../Image/ProjectImg';
-import Title from '../Title/Title';
 
 const GithubIcon = getIcon('github');
 
@@ -12,11 +11,11 @@ const Projects = () => {
   return (
     <section id="projects">
       {projects.map((project) => {
-        const { title, info, url, repo, img, id } = project;
+        const { title, info, url, repo, img } = project;
 
         return (
           <a
-            key={id}
+            key={url}
             href={url || '#!'}
             target="_blank"
             aria-label="Project Link"

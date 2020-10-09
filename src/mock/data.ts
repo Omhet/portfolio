@@ -1,5 +1,3 @@
-import { nanoid } from 'nanoid';
-
 // HEAD DATA
 export const headData = {
   title: 'Vladimir Ivanov', // e.g: 'Name | Developer'
@@ -96,14 +94,12 @@ export const aboutData = {
 // PROJECTS DATA
 export const projectsData = [
   {
-    id: nanoid(),
     img: 'projects/daria-site.jpg',
     title: 'Airadavometra Photos',
     info: 'Daria Artemova photo portfolio site',
     url: 'https://airadavometra.space/',
   },
   {
-    id: nanoid(),
     img: 'projects/watchlist.jpg',
     title: 'WannaWatch',
     info: 'IMDB inspired watchlist app',
@@ -111,7 +107,6 @@ export const projectsData = [
     repo: 'https://github.com/Omhet/watchlist',
   },
   {
-    id: nanoid(),
     img: 'projects/recycle.jpg',
     title: "Recycle: Don't get wasted",
     info: 'HTML5 game built with Phaser',
@@ -132,17 +127,14 @@ export const contactData = {
 export const socialData = {
   networks: [
     {
-      id: nanoid(),
       name: 'linkedin',
       url: 'https://www.linkedin.com/in/vlivanoff/',
     },
     {
-      id: nanoid(),
       name: 'github',
       url: 'https://github.com/Omhet',
     },
     {
-      id: nanoid(),
       name: 'twitter',
       url: 'https://twitter.com/omhetehmo',
     },
