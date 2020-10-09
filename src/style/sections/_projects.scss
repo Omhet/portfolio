@@ -1,14 +1,27 @@
 #projects {
-  margin-top: 80px;
   min-height: auto;
 
   @include respond(tab-port) {
     margin-top: 0;
   }
 
-  .projects-title {
+  .title-block {
+    position: relative;
+    padding-top: 80px;
+    border-right: 4px solid $accentColor;
+  }
+
+  .timeline-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba($color: #202022, $alpha: 0.3);
+    width: clamp(348px, 25vw, 448px);
+    padding: 0 clamp(24px, 3vw, 32px);
+
     @include respond(tab-port) {
-      border-right: 4px solid $accentColor;
+      display: none;
     }
   }
 

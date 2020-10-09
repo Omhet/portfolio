@@ -39,8 +39,8 @@ const About = () => {
         {timeline.map(({ description, year }) => (
           <>
             <div className="about-timeline__item">
-              <span>{description}</span>
-              <span className="about-timeline__year">{year}</span>
+              <div className="about-timeline__year">{year}</div>
+              <div>{description}</div>
             </div>
           </>
         ))}

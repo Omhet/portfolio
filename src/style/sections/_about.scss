@@ -12,7 +12,7 @@
   }
   
   display: flex;
-  position: relative;
+  justify-content: space-between;
 
   .about-timeline {
     @include respond(tab-port) {
@@ -22,28 +22,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: absolute;
-    right: 0;
-    height: 118vh;
-    padding: 0 32px;
-    margin-left: 104px;
+    width: clamp(348px, 25vw, 448px);
+    padding: 0 clamp(24px, 3vw, 32px);
     background-color: rgba($color: #202022, $alpha: 0.3);
     border-right: 4px solid $accentColor;
 
     &__item {
+      display: block;
       position: relative;
-      max-width: 348px;
       text-align: right;
-      margin-top: 80px;
-      padding-bottom: 32px;
+      margin-top: clamp(40px, 5vw, 80px);
+      padding-bottom: clamp(24px, 2vw, 32px);
       border-bottom: 1px solid $tertiaryBackColor;
-      font-size: 24px;
+      font-size: clamp(18px, 2vw, 24px);
       font-weight: 300;
       color: $secondaryTextColor;
 
       &:last-child {
         border-bottom: none;
-        margin-bottom: 48px;
+        margin-bottom: clamp(32px, 5vw, 48px);
       }
 
       &::after {
@@ -58,8 +55,9 @@
     }
 
     &__year {
-      @include floating();
-      margin-left: 72px;
+      font-size: clamp(14px, 1vw, 18px);
+      color: $tertiaryBackColor;
+      font-weight: 400;
     }
   }
 
