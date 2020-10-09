@@ -107,4 +107,13 @@
     height: 68vh;
     background: linear-gradient(to bottom, rgba($color: $accentColor, $alpha: 0), $accentColor);
   }
+
+  .success-msg {
+    opacity: 0;
+    transition: opacity .8s ease-in;
+
+    &.show {
+      opacity: 1;
+    }
+  }
 }

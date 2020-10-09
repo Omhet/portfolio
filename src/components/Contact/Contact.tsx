@@ -3,6 +3,7 @@ import PortfolioContext from '../../context/context';
 import Blob from '../../images/icons/blob-3.svg';
 import ArrowHorizIcon from '../../images/icons/arrow-h.svg';
 import Loader from '../Loader';
+import classnames from 'classnames';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);
@@ -12,17 +13,29 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [shouldShowSuccessMessage, setShouldShowSuccessMessage] = useState(false);
 
   const handleSubmit = useCallback(
     async (e) => {
       e.preventDefault();
       setIsLoading(true);
       const messageWithLineBreaks = message.replace('\n', '%0A');
-      await fetch(
-        `https://excessive-grape-dry.glitch.me/send?name=${name}&email=${email}&message=${messageWithLineBreaks}`,
-        { mode: 'no-cors' }
-      );
+      try {
+        await fetch(
+          `https://excessive-grape-dry.glitch.me/send?name=${name}&email=${email}&message=${messageWithLineBreaks}`,
+          { mode: 'no-cors' }
+        );
+        setShouldShowSuccessMessage(true);
+        setTimeout(() => {
+          setShouldShowSuccessMessage(false);
+        }, 2000);
+      } catch {}
+
       setIsLoading(false);
+
+      setName('');
+      setEmail('');
+      setMessage('');
     },
     [name, email, message]
   );
@@ -57,6 +70,7 @@ const Contact = () => {
           <button type="submit" className="cta-button submit-button">
             {isLoading ? <Loader /> : cta}
           </button>
+          <div className={classnames('success-msg', { show: shouldShowSuccessMessage })} >Successfully submitted. Thanks! 👋</div>
         </form>
         <div className="contact-wrapper__text-container">
           <p className="contact-wrapper__text">
