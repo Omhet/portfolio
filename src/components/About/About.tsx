@@ -16,7 +16,7 @@ const About = () => {
 
   return (
     <section id="about">
-      <div>
+      <div className="about-info-container" >
         <div className="about-info">
           <Title title="About" />
           <p>{firstParagraph}</p>
@@ -34,6 +34,7 @@ const About = () => {
             ))}
           </div>
         </div>
+        <Title className="projects-title" title="Projects" />
       </div>
       <div className="about-timeline">
         {timeline.map(({ description, year }) => (

@@ -14,6 +14,16 @@
   display: flex;
   justify-content: space-between;
 
+  .projects-title {
+    padding-top: 80px;
+    margin-top: auto;
+  }
+
+  .about-info-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .about-timeline {
     @include respond(tab-port) {
       display: none;
@@ -22,7 +32,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: clamp(348px, 25vw, 448px);
+    width: clamp(348px, 35vw, 448px);
     padding: 0 clamp(24px, 3vw, 32px);
     background-color: rgba($color: #202022, $alpha: 0.3);
     border-right: 4px solid $accentColor;

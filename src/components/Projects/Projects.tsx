@@ -11,10 +11,6 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <div className="title-block" >
-      <Title title="Projects" />
-      <div className="timeline-bottom"></div>
-      </div>
       {projects.map((project) => {
         const { title, info, url, repo, img, id } = project;
 

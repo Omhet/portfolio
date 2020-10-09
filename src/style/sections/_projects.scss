@@ -5,37 +5,17 @@
     margin-top: 0;
   }
 
-  .title-block {
-    position: relative;
-    padding-top: 80px;
-    border-right: 4px solid $accentColor;
-  }
-
-  .timeline-bottom {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    background-color: rgba($color: #202022, $alpha: 0.3);
-    width: clamp(348px, 25vw, 448px);
-    padding: 0 clamp(24px, 3vw, 32px);
-
-    @include respond(tab-port) {
-      display: none;
-    }
-  }
-
   .project-wrapper {
     display: block;
   }
 
-  .project-wrapper:nth-child(2n) {
+  .project-wrapper:nth-of-type(2n + 1) {
     border-top: 4px solid $accentColor;
     border-bottom: 4px solid $accentColor;
     border-left: 4px solid $accentColor;
   }
 
-  .project-wrapper:nth-child(3n) {
+  .project-wrapper:nth-of-type(2n) {
     border-right: 4px solid $accentColor;
   }
 
