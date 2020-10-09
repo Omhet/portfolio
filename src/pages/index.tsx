@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import App from '../components/App';
 import { headData } from '../mock/data';
+import '../style/main.scss';
 
 export default () => {
   const { title, lang, description } = headData;
