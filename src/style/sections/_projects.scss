@@ -42,6 +42,10 @@
     align-items: flex-end;
     padding: clamp(8px, 3vw, 24px);
     color: $primaryTextColor;
+
+    & svg {
+      width: clamp(18px, 3vw, 24px);
+    }
   }
 
   .project-info-overlay {
@@ -67,11 +71,11 @@
 
   .project-title {
     font-size: clamp(18px, 5vw, 32px);
-    margin-bottom: clamp(4px, 1vw, 12px);
+    margin-bottom: clamp(6px, 1vw, 12px);
   }
 
   .project-description {
-    font-size: clamp(14px, 2vw, 24px);
+    font-size: clamp(13px, 2vw, 24px);
     font-weight: 300;
   }
 }

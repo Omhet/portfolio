@@ -16,6 +16,7 @@ footer {
 
   & > :last-child {
     margin-left: clamp(6px, 1vw, 8px);
+    vertical-align: middle;
   }
 
   & a {
