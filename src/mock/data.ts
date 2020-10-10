@@ -19,7 +19,7 @@ const Skills = {
     img: 'skills/figma.png',
   },
   XD: {
-    name: 'Adobe XD',
+    name: 'XD',
     img: 'skills/xd.png',
   },
   HTML: {
