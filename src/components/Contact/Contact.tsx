@@ -17,18 +17,18 @@ const Contact = () => {
   const handleSubmit = useCallback(
     async (e) => {
       e.preventDefault();
+
       setIsLoading(true);
+      
       const messageWithLineBreaks = message.replace('\n', '%0A');
-      try {
-        await fetch(
-          `https://excessive-grape-dry.glitch.me/send?name=${name}&email=${email}&message=${messageWithLineBreaks}`,
-          { mode: 'no-cors' }
-        );
-        setShouldShowSuccessMessage(true);
-        setTimeout(() => {
-          setShouldShowSuccessMessage(false);
-        }, 2000);
-      } catch {}
+      await fetch(
+        `https://excessive-grape-dry.glitch.me/send?name=${name}&email=${email}&message=${messageWithLineBreaks}`,
+        { mode: 'no-cors' }
+      );
+      setShouldShowSuccessMessage(true);
+      setTimeout(() => {
+        setShouldShowSuccessMessage(false);
+      }, 2000);
 
       setIsLoading(false);
 
@@ -70,7 +70,10 @@ const Contact = () => {
             {isLoading ? <Loader /> : cta}
           </button>
           <div className={`success-msg ${shouldShowSuccessMessage ? 'show' : ''}`}>
-            Successfully submitted. Thanks! 👋
+            Successfully submitted. Thanks!{' '}
+            <span role="img" aria-label="See you!">
+              👋
+            </span>
           </div>
         </form>
         <div className="contact-wrapper__text-container">
