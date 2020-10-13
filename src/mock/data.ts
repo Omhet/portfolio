@@ -31,11 +31,11 @@ const Skills = {
     img: 'skills/css.png',
   },
   JS: {
-    name: 'JS',
+    name: 'JavaScript',
     img: 'skills/js.png',
   },
   TS: {
-    name: 'TS',
+    name: 'TypeScript',
     img: 'skills/ts.png',
   },
   React: {
