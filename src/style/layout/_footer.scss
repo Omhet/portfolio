@@ -17,6 +17,7 @@ footer {
   & > :last-child {
     margin-left: clamp(6px, 1vw, 8px);
     vertical-align: middle;
+    width: 1em;
   }
 
   & a {
@@ -24,10 +25,12 @@ footer {
     color: $secondaryTextColor;
     font-size: inherit;
     font-weight: 300;
-    transition: none;
+    transition: all .3s;
     cursor: pointer;
     &:hover {
       color: $primaryTextColor;
+      font-weight: 500;
+      margin: 0 clamp(6px, 1vw, 8px);
     }
   }
 }

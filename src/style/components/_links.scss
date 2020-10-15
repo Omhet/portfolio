@@ -18,4 +18,8 @@
   & > :last-child {
     margin-left: clamp(12px, 3vw, 24px);
   }
+
+  & > svg {
+    width: 8px;
+  }
 }
