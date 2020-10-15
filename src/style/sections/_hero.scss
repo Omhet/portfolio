@@ -10,6 +10,7 @@
     bottom: 4px;
     left: 50%;
     width: clamp(540px, 75vw, 780px);
+    max-height: 100vh;
     transform: translate(-50%);
   }
 
