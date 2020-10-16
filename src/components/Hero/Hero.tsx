@@ -47,7 +47,10 @@ const Header = () => {
         <LinkWithArrow className="see-work" to="projects" text="See my work" />
       </div>
       <div className="hero-bottom-line"></div>
-      <ProfileImg className="hero-img" alt="profile image" filename={img} />
+      <div className="hero-img-wrapper">
+        <div className="hero-img-back"></div>
+        <ProfileImg className="hero-img" alt="profile image" filename={img} />
+      </div>
       <div className="hero-watermark">{name}</div>
     </section>
   );
