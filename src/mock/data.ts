@@ -1,8 +1,8 @@
 // HEAD DATA
 export const headData = {
-  title: 'Vladimir Ivanov', // e.g: 'Name | Developer'
+  title: 'Vladimir Ivanov | Fullstack Web-Developer', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
-  description: 'Welcome to Vladimir Ivanov portfolio website', // e.g: Welcome to my website
+  description: 'Welcome to Vladimir Ivanov portfolio page', // e.g: Welcome to my website
 };
 
 // HERO DATA

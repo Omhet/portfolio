@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import App from '../components/App';
 import { headData } from '../mock/data';
+import ProfileImg from '../images/profile.png';
 import '../style/main.scss';
 
 export default () => {
@@ -11,9 +12,16 @@ export default () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{title || 'Gatsby Simplefolio'}</title>
-        <html lang={lang || 'en'} />
-        <meta name="description" content={description || 'Gatsby Simplefolio'} />
+        <title>{title}</title>
+        <html lang={lang} />
+        <meta name="description" content={description} />
+        <meta name="keywords" content="Vladimir Ivanov portfolio fullstack web-developer" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta property="og:image" content={ProfileImg} />
+        <meta name="twitter:image:src" content={ProfileImg} />
       </Helmet>
       <App />
     </>
