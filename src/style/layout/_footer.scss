@@ -24,6 +24,7 @@ footer {
   }
 
   & a {
+    margin: 6px;
     margin: 0 clamp(4px, 1vw, 6px);
     color: $secondaryTextColor;
     font-size: inherit;
@@ -33,6 +34,7 @@ footer {
     &:hover {
       color: $primaryTextColor;
       font-weight: 500;
+      margin: 8px;
       margin: 0 clamp(6px, 1vw, 8px);
     }
   }
