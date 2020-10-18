@@ -9,8 +9,12 @@ h2 {
 }
 
 p,
-a, input, textarea, button {
+a,
+input,
+textarea,
+button {
   font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
   font-size: clamp(18px, 3vw, 24px);
 }
 
@@ -33,7 +37,9 @@ a {
 }
 
 .section-title {
+  padding-bottom: 48px;
   padding-bottom: clamp(32px, 5vw, 48px);
+  font-size: 32px;
   font-size: clamp(24px, 5vw, 32px);
 }
 

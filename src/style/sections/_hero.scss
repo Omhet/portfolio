@@ -9,6 +9,7 @@
     position: absolute;
     bottom: 4px;
     left: 50%;
+    width: 780px;
     width: clamp(510px, 75vw, 780px);
     max-height: 100vh;
     transform: translate(-50%);
@@ -39,6 +40,7 @@
     position: absolute !important;
     opacity: 0.01;
     font-weight: 600;
+    font-size: 214px;
     font-size: clamp(100px, 15vw, 214px);
     text-transform: uppercase;
     white-space: nowrap;
@@ -48,12 +50,14 @@
   .hero-top {
     display: flex;
     justify-content: space-between;
+    margin-top: 24px;
     margin-top: clamp(16px, 3vw, 24px);
     z-index: 1;
   }
 
   .hero-logo {
     border-left: 1px solid $tertiaryBackColor;
+    padding-left: 24px;
     padding-left: clamp(16px, 3vw, 24px);
   }
 
@@ -61,9 +65,11 @@
     display: flex;
     text-transform: uppercase;
     border-right: 1px solid $tertiaryBackColor;
+    padding-right: 24px;
     padding-right: clamp(16px, 3vw, 24px);
 
     & a {
+      font-size: 16px;
       font-size: clamp(12px, 3vw, 16px);
       font-weight: 300;
       transition: none;
@@ -73,6 +79,7 @@
     }
 
     & > li + li {
+      margin-left: 24px;
       margin-left: clamp(16px, 3vw, 24px);
     }
   }
@@ -82,6 +89,7 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-top: auto;
+    margin-bottom: 64px;
     margin-bottom: clamp(24px, 2vw, 64px);
     z-index: 1;
   }
@@ -90,6 +98,7 @@
     display: flex;
     flex-direction: column;
     border-left: 1px solid $tertiaryBackColor;
+    padding-left: 24px;
     padding-left: clamp(16px, 3vw, 24px);
   }
 
@@ -97,6 +106,7 @@
     display: flex;
     margin-top: 16px;
     font-weight: 300;
+    font-size: 24px;
     font-size: clamp(18px, 3vw, 24px);
 
     & > li + li {
@@ -104,7 +114,9 @@
         content: ' ';
         display: inline-block;
         vertical-align: middle;
+        width: 8px;
         width: clamp(4px, 1vw, 8px);
+        height: 8px;
         height: clamp(4px, 1vw, 8px);
         margin: 0 clamp(8px, 2vw, 16px);
         background-color: $tertiaryBackColor;
@@ -114,6 +126,7 @@
   }
 
   .hero-name {
+    font-size: 36px;
     font-size: clamp(24px, 5vw, 36px);
   }
 

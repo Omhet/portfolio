@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  
+
   @include respond(phone) {
     line-height: 1.2;
   }
@@ -12,10 +12,11 @@
   }
 
   &__text {
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   & > :last-child {
+    margin-left: 24px;
     margin-left: clamp(12px, 3vw, 24px);
   }
 
