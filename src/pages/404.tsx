@@ -13,21 +13,19 @@ export default () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Page not found</title>
-        <html lang={lang || 'en'} />
+        <html lang={lang} />
         <meta name="description" content="Page not found" />
       </Helmet>
-      <section id="hero">
-            <h1 className="hero-title text-center">
-              Sorry, this path does not exist{' '}
-              <span role="img" aria-label="emoji">
-                😞
-              </span>
-            </h1>
-            <p className="hero-cta justify-content-center">
-              <Link className="cta-btn cta-btn--hero" to="/">
-                Go back
-              </Link>
-            </p>
+      <section id="not-found">
+        <Link className="" to="/">
+          Go back
+        </Link>
+        <h1>
+          Sorry, this path does not exist{' '}
+          <span role="img" aria-label="sad emoji">
+            😞
+          </span>
+        </h1>
       </section>
     </>
   );
