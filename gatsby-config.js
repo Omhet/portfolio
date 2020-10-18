@@ -22,11 +22,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Vladimir Ivanov portfolio`,
+        name: `Vladimir Ivanov portfolio page`,
         short_name: `Vladimir Ivanov`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#02aab0`,
+        background_color: `#17171A`,
+        theme_color: `#6350E0`,
         display: `standalone`,
         icon: 'src/images/favicon.png',
       },
