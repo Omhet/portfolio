@@ -73,8 +73,12 @@
       font-size: clamp(12px, 3vw, 16px);
       font-weight: 300;
       transition: none;
+      transition: margin 0.3s;
+
       &:hover {
         font-weight: 400;
+        margin: 8px;
+        margin: 0 clamp(6px, 1vw, 8px);
       }
     }
 
