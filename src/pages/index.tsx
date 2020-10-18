@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import App from '../components/App';
 import { headData } from '../mock/data';
-import ProfileImg from '../images/profile.png';
+import PreviewImg from '../images/preview.png';
 import '../style/main.scss';
 
 export default () => {
@@ -20,8 +20,8 @@ export default () => {
         <meta property="og:description" content={description} />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
-        <meta property="og:image" content={ProfileImg} />
-        <meta name="twitter:image:src" content={ProfileImg} />
+        <meta property="og:image" content={PreviewImg} />
+        <meta name="twitter:image:src" content={PreviewImg} />
       </Helmet>
       <App />
     </>
