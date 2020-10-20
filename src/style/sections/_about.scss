@@ -80,6 +80,7 @@
   .about-info {
     margin-top: 80px;
     margin-top: clamp(40px, 5vw, 80px);
+    margin-bottom: 16px;
     max-width: 720px;
     width: 48vw;
     @include respond(tab-port) {
