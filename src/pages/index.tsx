@@ -22,7 +22,6 @@ export default () => {
         <meta name="twitter:description" content={description} />
         <meta property="og:image" content={PreviewImg} />
         <meta name="twitter:image:src" content={PreviewImg} />
-        <meta name="yandex-verification" content="9e608658fdc8c05a" />
       </Helmet>
       <App />
     </>
