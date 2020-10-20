@@ -5,6 +5,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+*:focus {
+  outline: 2px solid $accentColor;
+}
+
 .h1,
 .h2,
 .h3,

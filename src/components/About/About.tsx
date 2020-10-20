@@ -4,8 +4,8 @@ import SkillImg from '../Image/SkillImg';
 import Title from '../Title/Title';
 
 const SkillItem = ({ img, name }: { img: string; name: string }) => (
-  <div className="about-skills__item">
-    <SkillImg title={name} className="about-skills__item-img" alt={name} filename={img} />
+  <div tabIndex={0} aria-label={name} title={name} className="about-skills__item">
+    <SkillImg className="about-skills__item-img" alt={name} filename={img} />
   </div>
 );
 
@@ -15,11 +15,11 @@ const About = () => {
 
   return (
     <section id="about">
-      <div className="about-info-container" >
+      <div className="about-info-container">
         <div className="about-info">
           <Title title="About" />
-          <p>{firstParagraph}</p>
-          <p>{secondParagraph}</p>
+          <p tabIndex={0}>{firstParagraph}</p>
+          <p tabIndex={0}>{secondParagraph}</p>
         </div>
         <div className="about-skills">
           <Title title="Skills" />
@@ -33,14 +33,14 @@ const About = () => {
             ))}
           </div>
         </div>
-        <Title className="projects-title" title="Projects" />
+        <Title tabIndex={null} className="projects-title" title="Projects" />
       </div>
-      <div className="about-timeline">
+      <div tabIndex={0} aria-label="timeline" className="about-timeline">
         {timeline.map(({ description, year }, index) => (
-          <div key={index} className="about-timeline__item">
-              <div className="about-timeline__year">{year}</div>
-              <div>{description}</div>
-            </div>
+          <div tabIndex={0} aria-label={`${year}. ${description }`} key={index} className="about-timeline__item">
+            <div className="about-timeline__year">{year}</div>
+            <div>{description}</div>
+          </div>
         ))}
       </div>
     </section>

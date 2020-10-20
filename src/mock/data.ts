@@ -19,7 +19,7 @@ const Skills = {
     img: 'skills/figma.png',
   },
   XD: {
-    name: 'XD',
+    name: 'Adobe XD',
     img: 'skills/xd.png',
   },
   HTML: {
@@ -85,7 +85,7 @@ export const aboutData = {
       year: '2019',
     },
     {
-      description: 'Got my bachelor in Computer Sciense',
+      description: 'Got my bachelor in Computer Science',
       year: '2020',
     },
   ],

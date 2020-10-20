@@ -17,7 +17,7 @@ const LinkWithArrow: FunctionComponent<Props> = ({
 }) => (
   <Link className={`link-with-arrow ${className}`} to={to} smooth duration={1000}>
     {isArrowOnTheLeft && <ArrowIcon />}
-    <span className="link-with-arrow__text">{text}</span>
+    <span tabIndex={0} className="link-with-arrow__text">{text}</span>
     {!isArrowOnTheLeft && <ArrowIcon />}
   </Link>
 );

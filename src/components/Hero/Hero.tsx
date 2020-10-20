@@ -7,7 +7,7 @@ import LinkWithArrow from '../LinkWithArrow';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { titles, name, img, ctaText } = hero;
+  const { titles, name, img } = hero;
 
   return (
     <section id="hero">
@@ -17,17 +17,17 @@ const Header = () => {
         </div>
         <nav>
           <ul className="hero-nav">
-            <li>
+            <li tabIndex={1}>
               <Link to="about" smooth duration={1000}>
                 about
               </Link>
             </li>
-            <li>
+            <li tabIndex={1}>
               <Link to="projects" smooth duration={1000}>
                 projects
               </Link>
             </li>
-            <li>
+            <li tabIndex={1}>
               <Link to="contact" smooth duration={1000}>
                 contact
               </Link>
@@ -36,7 +36,7 @@ const Header = () => {
         </nav>
       </div>
       <div className="hero-bottom">
-        <div className="hero-info">
+        <div tabIndex={0} aria-label={`${name}. ${titles.join(',')}`} className="hero-info">
           <h1 className="hero-name">{name}</h1>
           <ul className="hero-titles-list">
             {titles.map((title) => (
