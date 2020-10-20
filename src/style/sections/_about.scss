@@ -71,7 +71,7 @@
 
     &__year {
       font-size: 18px;
-      font-size: clamp(14px, 1vw, 18px);
+      font-size: clamp(14px, 86%, 18px);
       color: $tertiaryBackColor;
       font-weight: 400;
     }

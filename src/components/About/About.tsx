@@ -24,10 +24,10 @@ const About = () => {
         <div className="about-skills">
           <Title title="Skills" />
           <div className="about-skills__items">
-            {skills.map((row) => (
-              <div className="about-skills__items-row">
+            {skills.map((row, index) => (
+              <div key={index} className="about-skills__items-row">
                 {row.map((skill) => (
-                  <SkillItem {...skill} />
+                  <SkillItem key={skill.name} {...skill} />
                 ))}
               </div>
             ))}
@@ -36,13 +36,11 @@ const About = () => {
         <Title className="projects-title" title="Projects" />
       </div>
       <div className="about-timeline">
-        {timeline.map(({ description, year }) => (
-          <>
-            <div className="about-timeline__item">
+        {timeline.map(({ description, year }, index) => (
+          <div key={index} className="about-timeline__item">
               <div className="about-timeline__year">{year}</div>
               <div>{description}</div>
             </div>
-          </>
         ))}
       </div>
     </section>
