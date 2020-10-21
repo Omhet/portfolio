@@ -48,7 +48,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 @mixin respondHeight($breakpoint) {
   @if $breakpoint == first {
-    @media (max-height: 854px) {
+    @media (max-height: 858px) {
       @content;
     }
   }
