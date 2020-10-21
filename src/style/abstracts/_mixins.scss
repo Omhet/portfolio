@@ -44,3 +44,27 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     } //1800px +
   }
 }
+
+
+@mixin respondHeight($breakpoint) {
+  @if $breakpoint == first {
+    @media (max-height: 854px) {
+      @content;
+    }
+  }
+  @if $breakpoint == second {
+    @media (max-height: 774px) {
+      @content;
+    }
+  }
+  @if $breakpoint == third {
+    @media (max-height: 684px) {
+      @content;
+    }
+  }
+  @if $breakpoint == fourth {
+    @media (max-height: 644px) {
+      @content;
+    }
+  }
+}

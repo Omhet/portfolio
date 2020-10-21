@@ -14,6 +14,19 @@
     max-height: 100vh;
     transform: translate(-50%);
 
+    @include respondHeight(first) {
+      width: clamp(510px, 75vw, 680px);
+    }
+    @include respondHeight(second) {
+      width: clamp(510px, 75vw, 600px);
+    }
+    @include respondHeight(third) {
+      width: clamp(510px, 75vw, 550px);
+    }
+    @include respondHeight(fourth) {
+      width: clamp(430px, 75vw, 470px);
+    }
+
     & img {
       filter: drop-shadow(-25px 0 25px rgba($color: $primaryBackColor, $alpha: 0.6));
       object-fit: contain !important;
