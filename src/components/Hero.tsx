@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-scroll';
-import PortfolioContext from '../../context/context';
-import LogoImg from '../Image/LogoImg';
-import ProfileImg from '../Image/ProfileImg';
-import LinkWithArrow from '../LinkWithArrow';
+import PortfolioContext from '../context/context';
+import LogoImg from './Image/LogoImg';
+import ProfileImg from './Image/ProfileImg';
+import LinkWithArrow from './LinkWithArrow';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);

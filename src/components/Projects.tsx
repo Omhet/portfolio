@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import PortfolioContext from '../../context/context';
-import { getIcon } from '../../utils';
-import ProjectImg from '../Image/ProjectImg';
+import PortfolioContext from '../context/context';
+import { getIcon } from '../utils';
+import ProjectImg from './Image/ProjectImg';
 
 const GithubIcon = getIcon('github');
 

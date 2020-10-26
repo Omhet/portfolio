@@ -1,8 +1,8 @@
 import React, { useCallback, useContext, useState } from 'react';
-import PortfolioContext from '../../context/context';
-import Blob from '../../images/icons/blob.svg';
-import ArrowHorizIcon from '../../images/icons/arrow-h.svg';
-import Loader from '../Loader';
+import PortfolioContext from '../context/context';
+import Blob from '../images/icons/blob.svg';
+import ArrowHorizIcon from '../images/icons/arrow-h.svg';
+import Loader from './Loader';
 
 const Contact = () => {
   const { contact } = useContext(PortfolioContext);

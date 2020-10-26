@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import PortfolioContext from '../../context/context';
-import SkillImg from '../Image/SkillImg';
-import Title from '../Title/Title';
+import PortfolioContext from '../context/context';
+import SkillImg from './Image/SkillImg';
+import Title from './Title';
 
 const SkillItem = ({ img, name }: { img: string; name: string }) => (
   <div tabIndex={0} aria-label={name} title={name} className="about-skills__item">
