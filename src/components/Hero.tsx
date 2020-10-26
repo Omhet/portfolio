@@ -17,17 +17,17 @@ const Header = () => {
         </div>
         <nav>
           <ul className="hero-nav">
-            <li tabIndex={1}>
+            <li tabIndex={0}>
               <Link to="about" smooth duration={1000}>
                 about
               </Link>
             </li>
-            <li tabIndex={1}>
+            <li tabIndex={0}>
               <Link to="projects" smooth duration={1000}>
                 projects
               </Link>
             </li>
-            <li tabIndex={1}>
+            <li tabIndex={0}>
               <Link to="contact" smooth duration={1000}>
                 contact
               </Link>
@@ -36,7 +36,7 @@ const Header = () => {
         </nav>
       </div>
       <div className="hero-bottom">
-        <div tabIndex={0} aria-label={`${name}. ${titles.join(',')}`} className="hero-info">
+        <div aria-label={`${name}. ${titles.join(',')}`} className="hero-info">
           <h1 className="hero-name">{name}</h1>
           <ul className="hero-titles-list">
             {titles.map((title) => (

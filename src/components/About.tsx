@@ -4,7 +4,7 @@ import SkillImg from './Image/SkillImg';
 import Title from './Title';
 
 const SkillItem = ({ img, name }: { img: string; name: string }) => (
-  <div tabIndex={0} aria-label={name} title={name} className="about-skills__item">
+  <div aria-label={name} title={name} className="about-skills__item">
     <SkillImg className="about-skills__item-img" alt={name} filename={img} />
   </div>
 );
@@ -18,8 +18,8 @@ const About = () => {
       <div className="about-info-container">
         <div className="about-info">
           <Title title="About" />
-          <p tabIndex={0}>{firstParagraph}</p>
-          <p tabIndex={0}>{secondParagraph}</p>
+          <p>{firstParagraph}</p>
+          <p>{secondParagraph}</p>
         </div>
         <div className="about-skills">
           <Title title="Skills" />
@@ -33,11 +33,11 @@ const About = () => {
             ))}
           </div>
         </div>
-        <Title tabIndex={null} className="projects-title" title="Projects" />
+        <Title className="projects-title" title="Projects" />
       </div>
-      <div tabIndex={0} aria-label="timeline" className="about-timeline">
+      <div aria-label="timeline" className="about-timeline">
         {timeline.map(({ description, year }, index) => (
-          <div tabIndex={0} aria-label={`${year}. ${description }`} key={index} className="about-timeline__item">
+          <div aria-label={`${year}. ${description }`} key={index} className="about-timeline__item">
             <div className="about-timeline__year">{year}</div>
             <div>{description}</div>
           </div>
