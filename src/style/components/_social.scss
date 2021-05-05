@@ -1,24 +1,32 @@
 .social {
   position: fixed;
   top: 248px;
-  right: 14px;
+  right: 4px;
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: 10;
 
   @include respond(phone) {
     top: auto;
     bottom: 56px;
   }
 
+  @media (min-width: 1475px) {
+    right: 14px;
+  }
+
   svg {
-    width: 24px;
+    width: 22px;
     fill: #f8f8f8;
     fill-opacity: 0.8;
     transition: fill-opacity 0.2s ease-in-out;
 
     &:hover {
       fill-opacity: 1;
+    }
+
+    @media (min-width: 1475px) {
+      width: 24px;
     }
   }
 }
