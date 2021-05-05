@@ -69,10 +69,6 @@ export const aboutData = {
   ],
   timeline: [
     {
-      description: 'Enrolled in RSUH, Moscow',
-      year: '2016',
-    },
-    {
       description: 'Started to learn web development',
       year: '2017',
     },
@@ -81,12 +77,16 @@ export const aboutData = {
       year: '2018',
     },
     {
-      description: 'Became a full-time software engineer in Align',
+      description: 'Became a full-time frontend engineer in Align',
       year: '2019',
     },
     {
       description: 'Got my bachelor in Computer Science',
       year: '2020',
+    },
+    {
+      description: 'Joined Tinkoff as a fullstack engineer',
+      year: '2021',
     },
   ],
 };
@@ -118,7 +118,7 @@ export const projectsData = [
 // CONTACT DATA
 export const contactData = {
   textFirstLine: "Let's stay in",
-  textSecondLine: "touch",
+  textSecondLine: 'touch',
   cta: 'Submit',
   email: '',
 };
