@@ -1,6 +1,6 @@
 // HEAD DATA
 export const headData = {
-  title: 'Vladimir Ivanov | Fullstack Web-Developer', // e.g: 'Name | Developer'
+  title: 'Vladimir Ivanov | Frontend Developer', // e.g: 'Name | Developer'
   lang: 'en', // e.g: en, es, fr, jp
   description: 'Welcome to Vladimir Ivanov portfolio page', // e.g: Welcome to my website
 };
@@ -10,7 +10,7 @@ export const heroData = {
   img: 'profile.png',
   name: 'Vladimir Ivanov',
   ctaText: 'See my work',
-  titles: ['UI', 'Frontend', 'Backend'],
+  titles: ['UI', 'Frontend', 'A pinch of Backend'],
 };
 
 const Skills = {
@@ -58,7 +58,7 @@ const Skills = {
 
 // ABOUT DATA
 export const aboutData = {
-  firstParagraph: 'I’m a fullstack web engineer, currently based in Moscow.',
+  firstParagraph: 'I’m a frontend developer, currently based in Moscow.',
   secondParagraph: `Engaged in the development of data-intensive applications,
   participating in the whole proccess of app creation: 
   from UI design to server set-up and deployments.`,
@@ -69,24 +69,24 @@ export const aboutData = {
   ],
   timeline: [
     {
-      description: 'Started to learn web development',
+      description: 'Started to learn web',
       year: '2017',
     },
     {
-      description: 'Internship in Align, frontend department',
+      description: 'Started as an intern, then became a full-time frontend engineer in Align',
       year: '2018',
-    },
-    {
-      description: 'Became a full-time frontend engineer in Align',
-      year: '2019',
     },
     {
       description: 'Got my bachelor in Computer Science',
       year: '2020',
     },
     {
-      description: 'Joined Tinkoff as a fullstack engineer',
+      description: 'Joined Tinkoff as a fullstack engineer with incline to frontend',
       year: '2021',
+    },
+    {
+      description: 'Started to work as a contractor for Scentbird',
+      year: '2022',
     },
   ],
 };
@@ -94,24 +94,26 @@ export const aboutData = {
 // PROJECTS DATA
 export const projectsData = [
   {
-    img: 'projects/daria-site.jpg',
-    title: 'Airadavometra Photos',
-    info: 'Daria Artemova photo portfolio site',
-    url: 'https://airadavometra.space/',
+    img: 'projects/family-tree.webp',
+    title: 'Family Tree',
+    info: "(2022) My wife's family tree. Made in collaboration with Daria Artemova",
+    url: 'https://github.com/airadavometra/family-tree',
+    repo: 'https://github.com/Omhet/watchlist',
+  },
+  {
+    img: 'projects/secret-ingredient.png',
+    title: 'Secret Ingredient',
+    info:
+      '(2022) HTML5 game built with React and Pixi for GamedevJS-2022. Made in collaboration with Daria Artemova',
+    url: 'https://rhythm-game-eight.vercel.app/',
+    repo: 'https://github.com/Omhet/secret-ingredient',
   },
   {
     img: 'projects/watchlist.jpg',
     title: 'WannaWatch',
-    info: 'IMDB inspired watchlist app',
+    info: '(2019) IMDB inspired watchlist app',
     url: 'https://wannawatch.now.sh/',
     repo: 'https://github.com/Omhet/watchlist',
-  },
-  {
-    img: 'projects/recycle.jpg',
-    title: "Recycle: Don't get wasted",
-    info: 'HTML5 game built with Phaser',
-    url: 'https://omhet.github.io/recycle-game/',
-    repo: 'https://github.com/Omhet/recycle-game',
   },
 ];
 
