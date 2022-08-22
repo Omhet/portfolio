@@ -94,24 +94,25 @@ export const aboutData = {
 // PROJECTS DATA
 export const projectsData = [
   {
-    img: 'projects/family-tree.webp',
-    title: 'Family Tree',
-    info: "(2022) My wife's family tree. Made in collaboration with Daria Artemova",
-    url: 'https://github.com/airadavometra/family-tree',
-    repo: 'https://github.com/Omhet/watchlist',
-  },
-  {
     img: 'projects/secret-ingredient.png',
     title: 'Secret Ingredient',
     info:
-      '(2022) HTML5 game built with React and Pixi for GamedevJS-2022. Made in collaboration with Daria Artemova',
+      'My wife and I participated in Gamedev.js Jam 2022 and made a little cute rhythm game about a kitten who learns how to cook. I was responsible for the core game logic development. Also I created all the music myself. (2022)',
     url: 'https://rhythm-game-eight.vercel.app/',
     repo: 'https://github.com/Omhet/secret-ingredient',
   },
   {
+    img: 'projects/family-tree.webp',
+    title: 'Family Tree',
+    info:
+      'Here you can explore the Artemov family tree. And also find some additional info about each person and a list of other families connected with Artemov family members. This project is made in collaboration with Daria Artemova. (2022)',
+    url: 'https://family-tree-tau.vercel.app/',
+    repo: 'https://github.com/airadavometra/family-tree',
+  },
+  {
     img: 'projects/watchlist.jpg',
     title: 'WannaWatch',
-    info: '(2019) IMDB inspired watchlist app',
+    info: 'IMDB inspired watchlist app (2019)',
     url: 'https://wannawatch.now.sh/',
     repo: 'https://github.com/Omhet/watchlist',
   },
