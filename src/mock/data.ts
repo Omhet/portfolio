@@ -10,7 +10,7 @@ export const heroData = {
   img: 'profile.png',
   name: 'Vladimir Ivanov',
   ctaText: 'See my work',
-  titles: ['UI', 'Frontend', 'A pinch of Backend'],
+  titles: ['UI', 'Frontend', 'Fun'],
 };
 
 const Skills = {
